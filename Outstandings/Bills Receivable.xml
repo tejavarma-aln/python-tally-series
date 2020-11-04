@@ -1,0 +1,17 @@
+<ENVELOPE>
+    <HEADER>
+        <VERSION>1</VERSION>
+        <TALLYREQUEST>EXPORT</TALLYREQUEST>
+        <TYPE>DATA</TYPE>
+        <ID>Bills Receivable</ID>
+    </HEADER>
+    <BODY>
+        <DESC>
+            <STATICVARIABLES>
+                <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                <SVFROMDATE Type='DATE'>1-4-2020</SVFROMDATE>
+                <SVTODATE Type='DATE'>1-6-2020</SVTODATE>
+            </STATICVARIABLES>
+        </DESC>
+    </BODY>
+</ENVELOPE>
