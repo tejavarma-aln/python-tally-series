@@ -1,4 +1,4 @@
-# python-tally-series
+# Python-Tally-Series
 List of Flask projects under python tally series
 
 # Requirements
