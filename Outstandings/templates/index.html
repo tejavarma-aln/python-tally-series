@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OutStandings</title>
+    <link type="text/css" href="{{url_for('static',filename = 'styles.css')}}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<p class="title">Outstanding</p>
+<form method="POST" action="/ShowOutstanding">
+    <p>Report Type:</p>
+
+<select name="ReportType">
+    <option>Bills Receivable</option>
+    <option>Bills Payable</option>
+</select>
+    <p>From date:</p>
+    <input type="text" name="fromDt">
+    <p>To date:</p>
+    <input type="text" name="toDt">
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

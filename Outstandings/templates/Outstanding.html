@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{Name}}</title>
+     <link type="text/css", href="{{ url_for('static', filename= 'styles.css') }}", rel="stylesheet">
+</head>
+<body>
+<H2>Outstanding Report</H2>
+<span>
+<label class="RptTitle">Type : {{Name}}</label>
+<label class="period">From {{from_dt}} to {{to_dt}}</label>
+</span>
+ <table>
+     <tr>
+         <th>Date</th>
+         <th>Reference</th>
+         <th>Party</th>
+         <th>Amount</th>
+         <th>Due Date</th>
+         <th>OverDueDays</th>
+     </tr>
+     {% for i in range(bill_fix | length)  %}
+     <tr>
+         <td>{{bill_fix.__getitem__(i).date}}</td>
+         <td>{{bill_fix.__getitem__(i).ref}}</td>
+         <td>{{bill_fix.__getitem__(i).party}}</td>
+         <td>{{bill_cl.__getitem__(i)}}</td>
+         <td>{{bill_due.__getitem__(i)}}</td>
+          <td>{{bill_days.__getitem__(i)}}</td>
+     </tr>
+
+     {% endfor %}
+
+ </table>
+</body>
+</html>
